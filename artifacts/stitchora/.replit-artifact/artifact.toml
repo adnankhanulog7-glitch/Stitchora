@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Stitchora"
+description = "Stitchora is a B2B garment manufacturing website for an Indian factory. It showcases factory-direct apparel manufacturing services including products (T-Shirts, Polo, Joggers, Track Pants, Corporate Uniforms), manufacturing process, printing & embroidery, quality control, industries served, and a contact/quote request form. Target audience: fashion brands, buying houses, merchant exporters, and corporate clients. Static site for Netlify deployment."
+version = "1.0.0"
+id = "artifacts/stitchora"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 20113
+
+[services.development]
+run = "pnpm --filter @workspace/stitchora run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/stitchora", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/stitchora/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20113"
+BASE_PATH = "/"
