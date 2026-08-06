@@ -27,12 +27,11 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-[72px]">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 shrink-0">
-            <div className="w-10 h-10 bg-[#0D1E40] rounded-lg flex items-center justify-center">
-              {/* T-shirt SVG icon */}
-              <svg viewBox="0 0 24 24" className="w-6 h-6 fill-white" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 3L20.5 7l-2.5 1V21H6V8L3.5 7 8 3c0 0 1 2 4 2S16 3 16 3z"/>
-              </svg>
-            </div>
+            <img
+              src="/attached_assets/1_1786019847474.png"
+              alt="Stitchora logo"
+              className="w-10 h-10 object-contain"
+            />
             <div className="flex flex-col leading-none">
               <span className="text-[22px] font-black text-[#0D1E40] tracking-tight leading-none">STITCHORA</span>
               <span className="text-[9px] font-medium text-gray-500 tracking-[0.18em] uppercase leading-none mt-0.5">
