@@ -33,12 +33,11 @@ export default function Navbar() {
               alt="Stitchora logo"
               className="w-10 h-10 object-contain"
             />
-            <div className="flex flex-col leading-none">
-              <span style={{ fontFamily: "'Barlow', sans-serif", fontWeight: 900 }} className="text-[26px] text-[#0D1E40] tracking-[0.05em] leading-none uppercase">STITCHORA</span>
-              <span style={{ fontFamily: "'Barlow', sans-serif", fontWeight: 300 }} className="text-[8.5px] text-[#0D1E40] tracking-[0.28em] uppercase leading-none mt-1">
-                — Precision in Every Stitch —
-              </span>
-            </div>
+            <img
+              src="/stitchora-logo-fixed.png"
+              alt="Stitchora"
+              className="h-[44px] w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Navigation */}
