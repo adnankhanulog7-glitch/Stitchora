@@ -34,8 +34,8 @@ export default function Navbar() {
               className="w-10 h-10 object-contain"
             />
             <div className="flex flex-col leading-none">
-              <span className="text-[22px] font-black text-[#0D1E40] tracking-tight leading-none">STITCHORA</span>
-              <span className="text-[9px] font-medium text-gray-500 tracking-[0.18em] uppercase leading-none mt-0.5">
+              <span style={{ fontFamily: "'Barlow', sans-serif", fontWeight: 900 }} className="text-[26px] text-[#0D1E40] tracking-[0.05em] leading-none uppercase">STITCHORA</span>
+              <span style={{ fontFamily: "'Barlow', sans-serif", fontWeight: 300 }} className="text-[8.5px] text-[#0D1E40] tracking-[0.28em] uppercase leading-none mt-1">
                 — Precision in Every Stitch —
               </span>
             </div>
