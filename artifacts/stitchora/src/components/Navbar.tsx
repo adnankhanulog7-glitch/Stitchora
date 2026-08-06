@@ -31,7 +31,7 @@ export default function Navbar() {
             <img
               src={logoImg}
               alt="Stitchora logo"
-              className="w-10 h-10 object-contain"
+              className="w-11 h-11 object-contain -translate-y-[2px]"
             />
             <img
               src="/stitchora-logo-fixed.png"
