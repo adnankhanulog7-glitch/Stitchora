@@ -1,7 +1,7 @@
 kind = "web"
 previewPath = "/"
 title = "Stitchora"
-description = "Stitchora is a B2B garment manufacturing website for an Indian factory. It showcases factory-direct apparel manufacturing services including products (T-Shirts, Polo, Joggers, Track Pants, Corporate Uniforms), manufacturing process, printing & embroidery, quality control, industries served, and a contact/quote request form. Target audience: fashion brands, buying houses, merchant exporters, and corporate clients. Static site for Netlify deployment."
+description = "Stitchora is a B2B garment manufacturing website for an Indian factory. It showcases factory-direct apparel manufacturing services including products (T-Shirts, Polo, Joggers, Track Pants, Corporate Uniforms), manufacturing process, printing & embroidery, quality control, industries served, and a contact/quote request form."
 version = "1.0.0"
 id = "artifacts/stitchora"
 router = "path"
