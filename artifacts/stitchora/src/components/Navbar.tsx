@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'wouter';
 import { Menu, X } from 'lucide-react';
+import logoImg from '@assets/ChatGPT_Image_Jul_30,_2026,_07_49_59_PM_1786018494510.png';
 
 export default function Navbar() {
   const [location] = useLocation();
@@ -26,19 +27,12 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-[72px]">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2.5 shrink-0">
-            <div className="w-10 h-10 bg-[#0D1E40] rounded-lg flex items-center justify-center">
-              {/* T-shirt SVG icon */}
-              <svg viewBox="0 0 24 24" className="w-6 h-6 fill-white" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 3L20.5 7l-2.5 1V21H6V8L3.5 7 8 3c0 0 1 2 4 2S16 3 16 3z"/>
-              </svg>
-            </div>
-            <div className="flex flex-col leading-none">
-              <span className="text-[22px] font-black text-[#0D1E40] tracking-tight leading-none">STITCHORA</span>
-              <span className="text-[9px] font-medium text-gray-500 tracking-[0.18em] uppercase leading-none mt-0.5">
-                — Precision in Every Stitch —
-              </span>
-            </div>
+          <Link href="/" className="flex items-center shrink-0">
+            <img
+              src={logoImg}
+              alt="Stitchora — Precision in Every Stitch"
+              className="h-14 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Navigation */}
