@@ -25,7 +25,7 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-[72px]">
+        <div className="flex items-center justify-between h-[80px]">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 shrink-0">
             <img
@@ -36,7 +36,7 @@ export default function Navbar() {
             <img
               src="/stitchora-logo-fixed.png"
               alt="Stitchora"
-              className="h-[44px] w-auto object-contain"
+              className="h-[60px] w-auto object-contain"
             />
           </Link>
 
