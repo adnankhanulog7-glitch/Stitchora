@@ -54,7 +54,7 @@ export default function Industries() {
         <Breadcrumb items={[{ label: 'Home', href: '/' }, { label: 'Industries' }]} />
 
         {/* Header */}
-        <div className="grid lg:grid-cols-2 gap-10 items-start mb-10">
+        <div className="mb-10">
           <motion.div {...fadeUp}>
             <p className="flex items-center gap-2 text-xs font-bold text-[#1A7A3C] tracking-widest uppercase mb-3">
               WHO WE SERVE <span className="w-8 h-0.5 bg-[#1A7A3C]" />
@@ -66,25 +66,6 @@ export default function Industries() {
               Trusted garment manufacturing partner for businesses, exporters, buying houses and organizations
               across India and international markets.
             </p>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="hidden lg:block"
-          >
-            <div className="relative rounded-2xl overflow-hidden h-40">
-              <img
-                src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=600&h=200&fit=crop&q=80"
-                alt="Manufacturing"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-[#0D1E40]/30" />
-              <div className="absolute right-8 top-1/2 -translate-y-1/2 text-white/10 text-[120px] font-black leading-none select-none">
-                S
-              </div>
-            </div>
           </motion.div>
         </div>
 

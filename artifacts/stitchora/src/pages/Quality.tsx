@@ -42,32 +42,12 @@ export default function Quality() {
         <Breadcrumb items={[{ label: 'Home', href: '/' }, { label: 'Quality Control' }]} />
 
         {/* Header */}
-        <div className="grid lg:grid-cols-2 gap-10 items-start mb-12">
+        <div className="mb-12">
           <motion.div {...fadeUp}>
             <h1 className="text-3xl lg:text-4xl font-black text-[#0D1E40] mb-2">Quality Control</h1>
             <p className="text-[#1A7A3C] font-bold text-base mb-2">Quality in Every Step. Perfection in Every Piece.</p>
             <p className="text-gray-600 text-sm mb-4">We follow a strict quality control process to deliver only the best.</p>
             <div className="w-10 h-1 bg-[#1A7A3C]" />
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="hidden lg:block"
-          >
-            <div className="relative rounded-2xl overflow-hidden h-40">
-              <img
-                src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=600&h=200&fit=crop&q=80"
-                alt="Quality control"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-[#0D1E40]/20" />
-              {/* Decorative S watermark */}
-              <div className="absolute right-6 top-1/2 -translate-y-1/2 text-white/10 text-[120px] font-black leading-none select-none">
-                S
-              </div>
-            </div>
           </motion.div>
         </div>
 
