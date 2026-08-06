@@ -105,7 +105,7 @@ export default function Home() {
                   <FileText className="w-4 h-4" /> REQUEST A QUOTE
                 </Link>
                 <a href="/Company_Profile_1786041965784.pdf"
-                  download="Mafio-Company-Profile.pdf"
+                  download="Company Profile.pdf"
                   className="inline-flex items-center gap-2 px-6 py-3 border-2 border-gray-300 text-gray-700 text-sm font-bold rounded-lg hover:border-[#0D1E40] hover:text-[#0D1E40] transition-all">
                   <Download className="w-4 h-4" /> DOWNLOAD COMPANY PROFILE
                 </a>
