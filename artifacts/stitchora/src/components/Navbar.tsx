@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'wouter';
 import { Menu, X } from 'lucide-react';
+import logoImg from '@assets/1_1786019847474.png';
 
 export default function Navbar() {
   const [location] = useLocation();
@@ -28,7 +29,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 shrink-0">
             <img
-              src="/attached_assets/1_1786019847474.png"
+              src={logoImg}
               alt="Stitchora logo"
               className="w-10 h-10 object-contain"
             />
