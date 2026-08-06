@@ -27,12 +27,20 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-[72px]">
           {/* Logo */}
-          <Link href="/" className="flex items-center shrink-0">
-            <img
-              src={logoImg}
-              alt="Stitchora — Precision in Every Stitch"
-              className="h-14 w-auto object-contain"
-            />
+          <Link href="/" className="flex items-center gap-2.5 shrink-0">
+            <div className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center bg-white border border-gray-100 shadow-sm">
+              <img
+                src={logoImg}
+                alt="Stitchora logo"
+                className="w-full h-full object-contain"
+              />
+            </div>
+            <div className="flex flex-col leading-none">
+              <span style={{ fontFamily: "'Bebas Neue', sans-serif" }} className="text-[26px] text-[#0D1E40] tracking-wider leading-none">STITCHORA</span>
+              <span className="text-[9px] font-medium text-gray-500 tracking-[0.18em] uppercase leading-none mt-0.5">
+                — Precision in Every Stitch —
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
