@@ -26,7 +26,7 @@ const products = [
     gsm: '180 – 240 GSM',
     bg: 'bg-emerald-50',
     iconBg: 'bg-emerald-600',
-    img: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=480&h=360&fit=crop&q=80',
+    img: '/Round_Neck_1786042913275.png',
   },
   {
     title: 'Polo T-Shirts',
@@ -34,7 +34,7 @@ const products = [
     gsm: '180 – 240 GSM',
     bg: 'bg-blue-50',
     iconBg: 'bg-blue-700',
-    img: 'https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?w=480&h=360&fit=crop&q=80',
+    img: '/Polo_Tshirt_1786042913275.png',
   },
   {
     title: 'Oversized T-Shirts',
@@ -42,7 +42,7 @@ const products = [
     gsm: '180 – 240 GSM',
     bg: 'bg-amber-50',
     iconBg: 'bg-orange-500',
-    img: 'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=480&h=360&fit=crop&q=80',
+    img: '/Oversized_Tshirt_1786042913274.png',
   },
   {
     title: 'Joggers',
@@ -50,7 +50,7 @@ const products = [
     gsm: '280 – 380 GSM',
     bg: 'bg-purple-50',
     iconBg: 'bg-purple-600',
-    img: 'https://images.unsplash.com/photo-1552902865-b72c031ac5ea?w=480&h=360&fit=crop&q=80',
+    img: '/Joggers_1786042913274.png',
   },
   {
     title: 'Track Pants',
@@ -58,7 +58,7 @@ const products = [
     gsm: '200 – 300 GSM',
     bg: 'bg-teal-50',
     iconBg: 'bg-teal-600',
-    img: 'https://images.unsplash.com/photo-1609873814058-a8928924184a?w=480&h=360&fit=crop&q=80',
+    img: '/Track_Pant_1786042913273.png',
   },
   {
     title: 'Corporate Uniforms',
@@ -66,7 +66,7 @@ const products = [
     gsm: 'Custom GSM',
     bg: 'bg-slate-100',
     iconBg: 'bg-slate-700',
-    img: 'https://images.unsplash.com/photo-1590330297626-d7aff25a0431?w=480&h=360&fit=crop&q=80',
+    img: '/Corporate_Uniform_1786042913273.png',
   },
 ];
 

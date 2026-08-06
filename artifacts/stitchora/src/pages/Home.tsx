@@ -44,32 +44,32 @@ const products = [
   {
     label: 'Round Neck T-Shirts',
     bg: 'bg-emerald-50',
-    img: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=320&h=240&fit=crop&q=80',
+    img: '/Round_Neck_1786042913275.png',
   },
   {
     label: 'Polo T-Shirts',
     bg: 'bg-blue-50',
-    img: 'https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?w=320&h=240&fit=crop&q=80',
+    img: '/Polo_Tshirt_1786042913275.png',
   },
   {
     label: 'Oversized T-Shirts',
     bg: 'bg-amber-50',
-    img: 'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=320&h=240&fit=crop&q=80',
+    img: '/Oversized_Tshirt_1786042913274.png',
   },
   {
     label: 'Joggers',
     bg: 'bg-purple-50',
-    img: 'https://images.unsplash.com/photo-1552902865-b72c031ac5ea?w=320&h=240&fit=crop&q=80',
+    img: '/Joggers_1786042913274.png',
   },
   {
     label: 'Track Pants',
     bg: 'bg-teal-50',
-    img: 'https://images.unsplash.com/photo-1609873814058-a8928924184a?w=320&h=240&fit=crop&q=80',
+    img: '/Track_Pant_1786042913273.png',
   },
   {
     label: 'Corporate Uniforms',
     bg: 'bg-slate-100',
-    img: 'https://images.unsplash.com/photo-1590330297626-d7aff25a0431?w=320&h=240&fit=crop&q=80',
+    img: '/Corporate_Uniform_1786042913273.png',
   },
 ];
 
