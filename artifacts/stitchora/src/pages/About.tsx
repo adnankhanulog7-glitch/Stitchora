@@ -34,8 +34,7 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <Breadcrumb items={[{ label: 'Home', href: '/' }, { label: 'About Us' }]} />
 
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
-          {/* Left column */}
+        <div>
           <motion.div {...fadeUp} className="space-y-6">
             <p className="flex items-center gap-2 text-xs font-bold text-[#1A7A3C] tracking-widest uppercase">
               <span className="w-8 h-0.5 bg-[#1A7A3C]" /> WHO WE ARE
@@ -88,52 +87,20 @@ export default function About() {
             </Link>
           </motion.div>
 
-          {/* Right column */}
-          <motion.div
-            initial={{ opacity: 0, x: 24 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="space-y-4"
-          >
-            {/* Factory photo */}
-            <div className="relative rounded-2xl overflow-hidden">
-              <img
-                src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=700&h=420&fit=crop&q=80"
-                alt="Stitchora Manufacturing Facility"
-                className="w-full h-64 lg:h-72 object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0D1E40]/80 via-transparent to-transparent" />
-              <div className="absolute bottom-0 left-0 right-0 p-5">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center">
-                    <svg viewBox="0 0 24 24" className="w-5 h-5 fill-white" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                      <polyline points="9,22 9,12 15,12 15,22" fill="none" stroke="white" strokeWidth="2"/>
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="text-white font-bold text-sm">Our Manufacturing Facility</p>
-                    <p className="text-gray-300 text-xs">📍 Delhi / NCR, India</p>
-                  </div>
+          {/* Capabilities */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-8">
+            {capabilities.map((c) => (
+              <div key={c.title} className="bg-gray-50 border border-gray-100 rounded-xl p-4 text-center">
+                <div className="w-10 h-10 bg-[#1A7A3C]/10 rounded-xl flex items-center justify-center mx-auto mb-2">
+                  <c.icon className="w-5 h-5 text-[#1A7A3C]" />
                 </div>
+                <p className="text-xs font-bold text-[#0D1E40] mb-1">{c.title}</p>
+                <div className="w-4 h-0.5 bg-[#1A7A3C] mx-auto mb-2" />
+                <p className="text-[10px] text-gray-500 leading-relaxed">{c.desc}</p>
               </div>
-            </div>
+            ))}
+          </div>
 
-            {/* Capabilities */}
-            <div className="grid grid-cols-3 gap-3">
-              {capabilities.map((c) => (
-                <div key={c.title} className="bg-gray-50 border border-gray-100 rounded-xl p-4 text-center">
-                  <div className="w-10 h-10 bg-[#1A7A3C]/10 rounded-xl flex items-center justify-center mx-auto mb-2">
-                    <c.icon className="w-5 h-5 text-[#1A7A3C]" />
-                  </div>
-                  <p className="text-xs font-bold text-[#0D1E40] mb-1">{c.title}</p>
-                  <div className="w-4 h-0.5 bg-[#1A7A3C] mx-auto mb-2" />
-                  <p className="text-[10px] text-gray-500 leading-relaxed">{c.desc}</p>
-                </div>
-              ))}
-            </div>
-          </motion.div>
         </div>
       </div>
 
