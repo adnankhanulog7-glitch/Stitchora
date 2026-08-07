@@ -18,16 +18,16 @@ author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "workflow.run"
-args = "Stitchora local preview"
+args = "Start application"
 
 [[workflows.workflow]]
-name = "Stitchora local preview"
+name = "Start application"
 author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "PORT=5173 BASE_PATH=/ pnpm --filter @workspace/stitchora run dev"
-waitForPort = 5173
+args = "PORT=5000 BASE_PATH=/ pnpm --filter @workspace/stitchora run dev"
+waitForPort = 5000
 
 [workflows.workflow.metadata]
 outputType = "webview"
