@@ -102,14 +102,15 @@ export default function About() {
                 className="block aspect-[16/10] w-full object-cover"
               />
             </div>
-            <div className="absolute -bottom-6 left-4 sm:left-6 flex max-w-[calc(100%-2rem)] items-center gap-3 rounded-xl bg-[#1A7A3C] px-4 py-3 text-white shadow-lg">
-              <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-white/15">
-                <Factory className="h-5 w-5 text-white" />
+            <div className="absolute bottom-2 left-2 flex w-[calc(100%-1rem)] items-center gap-4 rounded-xl rounded-bl-2xl border border-white/20 bg-[#1A7A3C] px-4 py-4 text-white shadow-lg sm:w-[68%] sm:max-w-[24rem]">
+              <div className="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-full border border-white/30 bg-white/15">
+                <Factory className="h-7 w-7 text-white" />
               </div>
-              <div>
-                <h2 className="text-sm font-black leading-tight">Our Manufacturing Facility</h2>
-                <p className="mt-1 flex items-center gap-1 text-xs text-white/85">
-                  <MapPin className="h-3.5 w-3.5 flex-shrink-0" />
+              <div className="min-w-0">
+                <h2 className="text-base font-black leading-tight sm:text-lg">Our Manufacturing Facility</h2>
+                <div className="mt-2 h-px w-16 bg-white/60" />
+                <p className="mt-2 flex items-center gap-1.5 text-xs text-white/90 sm:text-sm">
+                  <MapPin className="h-4 w-4 flex-shrink-0" />
                   Delhi / NCR, India
                 </p>
               </div>
