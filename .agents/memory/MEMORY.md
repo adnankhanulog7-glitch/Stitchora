@@ -1,0 +1,1 @@
+- [Preview registration](preview-registration.md) — cloned web artifacts need their registered managed workflow for the Replit preview pane to render.
