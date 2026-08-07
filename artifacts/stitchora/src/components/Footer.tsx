@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#0D1E40] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2.5 mb-4">
@@ -29,25 +29,6 @@ export default function Footer() {
               <span className="font-semibold text-white">50,000+</span>
               <span>Pieces Monthly Capacity</span>
             </div>
-            <div className="flex items-center gap-2 text-xs text-gray-400">
-              <span className="w-4 h-0.5 bg-[#1A7A3C]" />
-              <span className="font-semibold text-white">7+</span>
-              <span>Years Experience</span>
-            </div>
-          </div>
-
-          {/* Products */}
-          <div>
-            <h3 className="text-sm font-bold mb-4 uppercase tracking-widest text-white">Products</h3>
-            <ul className="space-y-2">
-              {['Round Neck T-Shirts','Polo T-Shirts','Oversized T-Shirts','Joggers','Track Pants','Corporate Uniforms'].map(p => (
-                <li key={p}>
-                  <Link href="/products" className="text-sm text-gray-300 hover:text-white transition-colors">
-                    {p}
-                  </Link>
-                </li>
-              ))}
-            </ul>
           </div>
 
           {/* Company */}
