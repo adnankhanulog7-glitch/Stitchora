@@ -1,5 +1,5 @@
 import { Link } from 'wouter';
-import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { FaWhatsapp } from 'react-icons/fa';
 
 export default function Footer() {
   return (
@@ -93,21 +93,15 @@ export default function Footer() {
               </li>
             </ul>
             <div className="flex gap-2.5 mt-5">
-              {[
-                { Icon: Facebook, label: 'Facebook' },
-                { Icon: Twitter, label: 'Twitter' },
-                { Icon: Instagram, label: 'Instagram' },
-                { Icon: Linkedin, label: 'LinkedIn' },
-              ].map(({ Icon, label }) => (
-                <a
-                  key={label}
-                  href="#"
-                  aria-label={label}
-                  className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors"
-                >
-                  <Icon className="w-3.5 h-3.5" />
-                </a>
-              ))}
+              <a
+                href="https://wa.me/917827710760"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="WhatsApp"
+                className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors"
+              >
+                <FaWhatsapp className="w-3.5 h-3.5" />
+              </a>
             </div>
           </div>
         </div>
