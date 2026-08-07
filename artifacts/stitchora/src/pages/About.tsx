@@ -35,6 +35,7 @@ export default function About() {
         <Breadcrumb items={[{ label: 'Home', href: '/' }, { label: 'About Us' }]} />
 
         <div>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
           <motion.div {...fadeUp} className="space-y-6">
             <p className="flex items-center gap-2 text-xs font-bold text-[#1A7A3C] tracking-widest uppercase">
               <span className="w-8 h-0.5 bg-[#1A7A3C]" /> WHO WE ARE
@@ -86,6 +87,21 @@ export default function About() {
               GET IN TOUCH <ArrowRight className="w-4 h-4" />
             </Link>
           </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 24 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+            className="overflow-hidden rounded-2xl border border-gray-100 bg-gray-50 shadow-lg"
+          >
+            <img
+              src="/about-manufacturing-partner.png"
+              alt="Stitchora garment manufacturing facility"
+              className="block aspect-[16/10] w-full object-cover"
+            />
+          </motion.div>
+          </div>
 
           {/* Capabilities */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-8">
