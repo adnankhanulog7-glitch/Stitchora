@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, Target, Eye, Layers, Users, Wrench, Scale, Award, Handshake, Lightbulb } from 'lucide-react';
+import { ArrowRight, Target, Eye, Layers, Users, Wrench, Scale, Award, Handshake, Lightbulb, Factory, MapPin } from 'lucide-react';
 import { Link } from 'wouter';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -93,13 +93,27 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="overflow-hidden rounded-2xl border border-gray-100 bg-gray-50 shadow-lg"
+            className="relative rounded-2xl border border-gray-100 bg-gray-50 shadow-lg"
           >
-            <img
-              src="/about-manufacturing-partner.png"
-              alt="Stitchora garment manufacturing facility"
-              className="block aspect-[16/10] w-full object-cover"
-            />
+            <div className="overflow-hidden rounded-2xl">
+              <img
+                src="/about-manufacturing-partner.png"
+                alt="Stitchora garment manufacturing facility"
+                className="block aspect-[16/10] w-full object-cover"
+              />
+            </div>
+            <div className="absolute -bottom-6 left-4 sm:left-6 flex max-w-[calc(100%-2rem)] items-center gap-3 rounded-xl bg-[#1A7A3C] px-4 py-3 text-white shadow-lg">
+              <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-white/15">
+                <Factory className="h-5 w-5 text-white" />
+              </div>
+              <div>
+                <h2 className="text-sm font-black leading-tight">Our Manufacturing Facility</h2>
+                <p className="mt-1 flex items-center gap-1 text-xs text-white/85">
+                  <MapPin className="h-3.5 w-3.5 flex-shrink-0" />
+                  Delhi / NCR, India
+                </p>
+              </div>
+            </div>
           </motion.div>
           </div>
 
