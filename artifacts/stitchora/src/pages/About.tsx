@@ -102,7 +102,7 @@ export default function About() {
                 className="block aspect-[16/10] w-full object-cover"
               />
             </div>
-            <div className="absolute bottom-2 left-2 flex w-[calc(100%-1rem)] items-center gap-4 rounded-xl rounded-bl-2xl border border-white/20 bg-[#1A7A3C] px-4 py-4 text-white shadow-lg sm:w-[68%] sm:max-w-[24rem]">
+            <div className="absolute bottom-2 left-2 flex w-[calc(100%-1rem)] items-center gap-4 rounded-xl rounded-bl-2xl border border-white/20 bg-[#0D1E40] px-4 py-4 text-white shadow-lg sm:w-[68%] sm:max-w-[24rem]">
               <div className="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-full border border-white/30 bg-white/15">
                 <Factory className="h-7 w-7 text-white" />
               </div>
