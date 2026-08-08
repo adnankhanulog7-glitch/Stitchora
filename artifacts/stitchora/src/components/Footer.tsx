@@ -66,7 +66,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <span>✉️</span>
-                <span>info@mafio.in</span>
+                <span>shlgrowcontact@gmail.com</span>
               </li>
               <li className="flex items-start gap-2">
                 <span>🕐</span>

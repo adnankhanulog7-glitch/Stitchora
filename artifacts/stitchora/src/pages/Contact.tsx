@@ -15,7 +15,7 @@ const fadeUp = {
 const contactInfo = [
   { icon: MapPin, label: 'ADDRESS', value: 'Delhi / NCR, India' },
   { icon: Phone, label: 'PHONE', value: '+91 7303-XXX-XXX' },
-  { icon: Mail, label: 'EMAIL', value: 'info@mafio.in' },
+  { icon: Mail, label: 'EMAIL', value: 'shlgrowcontact@gmail.com' },
   { icon: Clock, label: 'WORKING HOURS', value: 'Mon–Sat, 10:00 AM – 7:00 PM' },
 ];
 
