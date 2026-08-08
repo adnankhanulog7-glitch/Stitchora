@@ -208,6 +208,25 @@
   }
 }
 
+@keyframes whatsapp-fab-pulse {
+  0%, 100% {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.12), 0 0 0 0 rgba(37, 211, 102, 0.28);
+  }
+  50% {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.12), 0 0 0 8px rgba(37, 211, 102, 0);
+  }
+}
+
+.whatsapp-fab {
+  animation: whatsapp-fab-pulse 2.8s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .whatsapp-fab {
+    animation: none;
+  }
+}
+
 @layer utilities {
   input[type='search']::-webkit-search-cancel-button {
     @apply hidden;

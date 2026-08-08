@@ -11,6 +11,7 @@ import PrintingEmbroidery from '@/pages/PrintingEmbroidery';
 import Quality from '@/pages/Quality';
 import Industries from '@/pages/Industries';
 import Contact from '@/pages/Contact';
+import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import { Route, Switch, Router as WouterRouter, useLocation } from 'wouter';
 
 const queryClient = new QueryClient();
@@ -49,6 +50,7 @@ function App() {
           <ScrollToTop />
           <Router />
         </WouterRouter>
+        <FloatingWhatsApp />
         <Toaster />
       </TooltipProvider>
     </QueryClientProvider>
