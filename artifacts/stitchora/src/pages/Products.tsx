@@ -26,7 +26,7 @@ const products = [
     gsm: '180 – 240 GSM',
     bg: 'bg-emerald-50',
     iconBg: 'bg-emerald-600',
-    img: '/Round_Neck_1786042913275.png',
+    img: '/Round_Neck_T-Shirts_1786188190818.png',
   },
   {
     title: 'Polo T-Shirts',
@@ -34,7 +34,7 @@ const products = [
     gsm: '180 – 240 GSM',
     bg: 'bg-blue-50',
     iconBg: 'bg-blue-700',
-    img: '/Polo_Tshirt_1786042913275.png',
+    img: '/Polo_T-Shirts_1786188190817.png',
   },
   {
     title: 'Oversized T-Shirts',
