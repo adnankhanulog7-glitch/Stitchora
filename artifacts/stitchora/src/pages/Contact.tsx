@@ -95,12 +95,23 @@ export default function Contact() {
               <div className="absolute inset-0 overflow-hidden">
                 <iframe
                   title="Stitchora location map"
-                  src="https://www.google.com/maps?q=28.4819179,77.3363902&z=16&output=embed"
+                  src="https://www.google.com/maps?center=28.4819179%2C77.3363902&zoom=16&output=embed"
                   className="h-full w-full scale-[1.1] transform border-0"
                   style={{ transformOrigin: 'center' }}
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 />
+              </div>
+              <div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center">
+                <div className="flex flex-col items-center">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#0D1E40] shadow-lg ring-4 ring-white/60">
+                    <MapPin className="h-5 w-5 text-white" />
+                  </div>
+                  <div className="mt-2 rounded-lg border border-gray-100 bg-white px-4 py-2 text-center shadow-md">
+                    <p className="text-sm font-bold text-[#0D1E40]">Surya Vihar Part II, Sector 91</p>
+                    <p className="text-xs text-gray-500">Faridabad, Haryana 121013, India</p>
+                  </div>
+                </div>
               </div>
             </div>
           </motion.div>
