@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, Award, Factory, Clock, Handshake, Package } from 'lucide-react';
+import { ArrowRight, Award, Factory, Clock, Handshake } from 'lucide-react';
 import { Link } from 'wouter';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -25,7 +25,6 @@ const products = [
     materials: 'Cotton, Modal, Cotton-Polyester',
     gsm: '180 – 240 GSM',
     bg: 'bg-emerald-50',
-    iconBg: 'bg-emerald-600',
     img: '/Round_Neck_T-Shirts_1786188190818.png',
   },
   {
@@ -33,7 +32,6 @@ const products = [
     materials: 'Cotton, Cotton Petty, Polyester Honeycomb',
     gsm: '180 – 240 GSM',
     bg: 'bg-blue-50',
-    iconBg: 'bg-blue-700',
     img: '/Polo_T-Shirts_1786188190817.png',
   },
   {
@@ -41,7 +39,6 @@ const products = [
     materials: 'Cotton, Polyester, Heavy 240',
     gsm: '180 – 240 GSM',
     bg: 'bg-amber-50',
-    iconBg: 'bg-orange-500',
     img: '/Oversized_Tshirt_1786042913274.png',
   },
   {
@@ -49,7 +46,6 @@ const products = [
     materials: 'Cotton, Polyester, French Terry, Fleece',
     gsm: '280 – 380 GSM',
     bg: 'bg-purple-50',
-    iconBg: 'bg-purple-600',
     img: '/Joggers_1786042913274.png',
   },
   {
@@ -57,7 +53,6 @@ const products = [
     materials: 'Cotton, Terry, Dry Fit, Polyester',
     gsm: '200 – 300 GSM',
     bg: 'bg-teal-50',
-    iconBg: 'bg-teal-600',
     img: '/Track_Pant_1786042913273.png',
   },
   {
@@ -65,7 +60,6 @@ const products = [
     materials: 'T-Shirts, Polos, Shirts, Trousers, Aprons & More',
     gsm: 'Custom GSM',
     bg: 'bg-slate-100',
-    iconBg: 'bg-slate-700',
     img: '/Corporate_Uniform_1786042913273.png',
   },
 ];
@@ -129,9 +123,6 @@ export default function Products() {
                     alt={p.title}
                     className="w-full h-full object-contain scale-[1.3] group-hover:scale-[1.35] transition-transform duration-300"
                   />
-                </div>
-                <div className={`absolute top-3 left-3 w-9 h-9 ${p.iconBg} rounded-full flex items-center justify-center shadow-md`}>
-                  <Package className="w-4 h-4 text-white" />
                 </div>
               </div>
               {/* Product info */}
