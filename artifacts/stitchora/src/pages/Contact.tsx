@@ -92,13 +92,16 @@ export default function Contact() {
 
             {/* Google Map */}
             <div className="relative bg-gray-100 rounded-2xl overflow-hidden h-56 border border-gray-200">
-              <iframe
-                title="Stitchora location map"
-                src="https://www.google.com/maps?q=28.4819179,77.3363902&z=16&output=embed"
-                className="w-full h-full border-0"
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
+              <div className="absolute inset-0 overflow-hidden">
+                <iframe
+                  title="Stitchora location map"
+                  src="https://www.google.com/maps?q=28.4819179,77.3363902&z=16&output=embed"
+                  className="h-full w-full scale-[1.1] transform border-0"
+                  style={{ transformOrigin: 'center' }}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </div>
             </div>
           </motion.div>
 
