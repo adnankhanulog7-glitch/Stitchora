@@ -58,7 +58,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-gray-300">
               <li className="flex items-start gap-2">
                 <span className="mt-0.5">📍</span>
-                <span>Delhi / NCR, India</span>
+                <span>Surya Vihar Part II, Sector 91, Faridabad, Haryana 121013, India</span>
               </li>
               <li className="flex items-start gap-2">
                 <span>📞</span>

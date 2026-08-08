@@ -45,7 +45,7 @@ export default function About() {
             </h1>
             <div className="w-10 h-1 bg-[#1A7A3C]" />
             <p className="text-gray-600 leading-relaxed">
-              Stitchora is a leading garment manufacturing company based in Delhi / NCR, India. We specialize
+              Stitchora is a leading garment manufacturing company based in Surya Vihar Part II, Sector 91, Faridabad, Haryana 121013, India. We specialize
               in the production of high-quality knitted apparel for domestic and international markets.
             </p>
             <p className="text-gray-600 leading-relaxed">
@@ -111,7 +111,7 @@ export default function About() {
                 <div className="mt-2 h-px w-16 bg-white/60" />
                 <p className="mt-2 flex items-center gap-1.5 text-xs text-white/90 sm:text-sm">
                   <MapPin className="h-4 w-4 flex-shrink-0" />
-                  Delhi / NCR, India
+                  Surya Vihar Part II, Sector 91, Faridabad, Haryana 121013, India
                 </p>
               </div>
             </div>

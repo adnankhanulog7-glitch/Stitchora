@@ -13,7 +13,7 @@ const fadeUp = {
 };
 
 const contactInfo = [
-  { icon: MapPin, label: 'ADDRESS', value: 'Delhi / NCR, India' },
+  { icon: MapPin, label: 'ADDRESS', value: 'Surya Vihar Part II, Sector 91, Faridabad, Haryana 121013, India' },
   { icon: Phone, label: 'PHONE', value: '+91 7303-XXX-XXX' },
   { icon: Mail, label: 'EMAIL', value: 'shlgrowcontact@gmail.com' },
   { icon: Clock, label: 'WORKING HOURS', value: 'Mon–Sat, 10:00 AM – 7:00 PM' },
@@ -117,8 +117,8 @@ export default function Contact() {
                     <MapPin className="w-5 h-5 text-white" />
                   </div>
                   <div className="bg-white rounded-lg px-4 py-2 shadow-md border border-gray-100">
-                    <p className="text-sm font-bold text-[#0D1E40]">Delhi / NCR</p>
-                    <p className="text-xs text-gray-500">India</p>
+                    <p className="text-sm font-bold text-[#0D1E40]">Surya Vihar Part II, Sector 91</p>
+                    <p className="text-xs text-gray-500">Faridabad, Haryana 121013, India</p>
                   </div>
                 </div>
               </div>
