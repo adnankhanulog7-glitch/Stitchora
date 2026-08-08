@@ -38,13 +38,6 @@ const reasons = [
   { icon: Clock, title: 'Reliable Production Timelines', desc: 'On-time delivery with accurate planning and communication.' },
 ];
 
-const stats = [
-  { number: '500+', label: 'Happy Clients\nWorldwide' },
-  { number: '30+', label: 'Countries\nExported To' },
-  { number: '50,000+', label: 'Pieces Monthly\nCapacity' },
-  { number: '100%', label: 'Quality\nCommitment' },
-];
-
 export default function Industries() {
   return (
     <div className="min-h-screen bg-white">
@@ -120,10 +113,10 @@ export default function Industries() {
         </motion.div>
       </div>
 
-      {/* Bottom CTA with stats */}
+      {/* Bottom CTA */}
       <section className="bg-[#0D1E40]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="grid lg:grid-cols-2 gap-10 items-center">
+          <div>
             <div>
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0">
@@ -147,14 +140,6 @@ export default function Industries() {
                   <Download className="w-4 h-4" /> DOWNLOAD COMPANY PROFILE
                 </a>
               </div>
-            </div>
-            <div className="grid grid-cols-4 gap-4">
-              {stats.map((s) => (
-                <div key={s.number} className="text-center">
-                  <p className="text-2xl lg:text-3xl font-black text-white">{s.number}</p>
-                  <p className="text-[11px] text-gray-400 mt-1 whitespace-pre-line leading-tight">{s.label}</p>
-                </div>
-              ))}
             </div>
           </div>
         </div>
