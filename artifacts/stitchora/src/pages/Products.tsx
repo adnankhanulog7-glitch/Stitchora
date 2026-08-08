@@ -122,12 +122,14 @@ export default function Products() {
               className="border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all group"
             >
               {/* Product image area */}
-              <div className={`${p.bg} h-52 relative overflow-hidden`}>
-                <img
-                  src={p.img}
-                  alt={p.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
+              <div className={`${p.bg} h-52 relative overflow-hidden p-4`}>
+                <div className="w-full h-full bg-gray-50 rounded-lg overflow-hidden">
+                  <img
+                    src={p.img}
+                    alt={p.title}
+                    className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
                 <div className={`absolute top-3 left-3 w-9 h-9 ${p.iconBg} rounded-full flex items-center justify-center shadow-md`}>
                   <Package className="w-4 h-4 text-white" />
                 </div>
