@@ -14,7 +14,7 @@ const fadeUp = {
 
 const contactInfo = [
   { icon: MapPin, label: 'ADDRESS', value: 'Surya Vihar Part II, Sector 91, Faridabad, Haryana 121013, India' },
-  { icon: Phone, label: 'PHONE', value: '+91 7303-XXX-XXX' },
+  { icon: Phone, label: 'PHONE', value: '+91 78277 10760' },
   { icon: Mail, label: 'EMAIL', value: 'shlgrowcontact@gmail.com' },
   { icon: Clock, label: 'WORKING HOURS', value: 'Mon–Sat, 10:00 AM – 7:00 PM' },
 ];

@@ -62,7 +62,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <span>📞</span>
-                <span>+91 7303-XXX-XXX</span>
+                <span>+91 78277 10760</span>
               </li>
               <li className="flex items-start gap-2">
                 <span>✉️</span>
