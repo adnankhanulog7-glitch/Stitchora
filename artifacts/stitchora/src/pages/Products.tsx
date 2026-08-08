@@ -122,7 +122,7 @@ export default function Products() {
               className="border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all group"
             >
               {/* Product image area */}
-              <div className={`${p.bg} h-52 relative overflow-hidden p-4`}>
+              <div className={`${p.bg} h-80 relative overflow-hidden p-2`}>
                 <div className="w-full h-full bg-gray-50 rounded-lg overflow-hidden">
                   <img
                     src={p.img}
