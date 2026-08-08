@@ -90,38 +90,15 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Map placeholder */}
+            {/* Google Map */}
             <div className="relative bg-gray-100 rounded-2xl overflow-hidden h-56 border border-gray-200">
-              <div className="absolute inset-0 bg-gradient-to-br from-gray-200 via-gray-100 to-gray-200">
-                {/* Stylized map grid */}
-                <svg className="absolute inset-0 w-full h-full opacity-30" xmlns="http://www.w3.org/2000/svg">
-                  <defs>
-                    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#94a3b8" strokeWidth="0.5"/>
-                    </pattern>
-                  </defs>
-                  <rect width="100%" height="100%" fill="url(#grid)" />
-                </svg>
-                {/* Simulated roads */}
-                <svg className="absolute inset-0 w-full h-full opacity-40" xmlns="http://www.w3.org/2000/svg">
-                  <line x1="0" y1="35%" x2="100%" y2="42%" stroke="#cbd5e1" strokeWidth="3"/>
-                  <line x1="0" y1="65%" x2="100%" y2="58%" stroke="#cbd5e1" strokeWidth="2"/>
-                  <line x1="30%" y1="0" x2="35%" y2="100%" stroke="#cbd5e1" strokeWidth="2"/>
-                  <line x1="65%" y1="0" x2="60%" y2="100%" stroke="#cbd5e1" strokeWidth="3"/>
-                </svg>
-              </div>
-              {/* Map pin */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-10 h-10 bg-[#0D1E40] rounded-full flex items-center justify-center mx-auto mb-2 shadow-lg">
-                    <MapPin className="w-5 h-5 text-white" />
-                  </div>
-                  <div className="bg-white rounded-lg px-4 py-2 shadow-md border border-gray-100">
-                    <p className="text-sm font-bold text-[#0D1E40]">Surya Vihar Part II, Sector 91</p>
-                    <p className="text-xs text-gray-500">Faridabad, Haryana 121013, India</p>
-                  </div>
-                </div>
-              </div>
+              <iframe
+                title="Stitchora location map"
+                src="https://www.google.com/maps?q=28.4819179,77.3363902&z=16&output=embed"
+                className="w-full h-full border-0"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
             </div>
           </motion.div>
 
