@@ -1,0 +1,23 @@
+The current real Google Maps iframe embed looks too cluttered (shows Keyboard shortcuts, Map data, Terms, Report a map error, satellite toggle, street view peg icon, etc.) — this doesn't match the site's clean design.
+
+I preferred the earlier placeholder design's look (soft light-gray map background, minimal grid lines, a clean dark circular pin icon, and a floating white card showing the address) — but that one used FAKE map graphics. I want that same clean visual style, but showing the REAL location.
+
+Please replace the current cluttered iframe with this approach instead:
+
+1. Use the Google Static Maps API to generate a clean, custom-styled map image for these coordinates: 28.4819179, 77.3363902
+   Example URL structure:
+   https://maps.googleapis.com/maps/api/staticmap?center=28.4819179,77.3363902&zoom=15&size=1200x500&scale=2&style=feature:all|element:labels|visibility:off&style=feature:road|element:geometry|color:0xe0e0e0&style=feature:landscape|element:geometry|color:0xf5f5f5&markers=color:0x0a1e3f%7C28.4819179,77.3363902&key=YOUR_GOOGLE_MAPS_API_KEY
+
+   (Note: this requires a Google Maps Static API key — check if one already exists in the project's environment variables/secrets; if not, let me know so I can generate one.)
+
+2. Use this static map image as the background of the map section (same container size/rounded corners as before).
+
+3. Keep the same overlay design as the original placeholder: a dark circular pin icon centered on the marker location, and a white floating card below it showing "Surya Vihar Part II, Sector 91" and "Faridabad, Haryana 121013, India".
+
+4. Make the entire map section clickable — wrap it in a link to:
+   https://www.google.com/maps?q=28.4819179,77.3363902
+   opening in a new tab, so clicking it takes users to real Google Maps for directions.
+
+5. No Google UI clutter (no attribution bar, no controls) should be visible — since it's a static image, this is naturally clean.
+
+Show me a screenshot after the change.
